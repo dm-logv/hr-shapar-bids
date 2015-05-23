@@ -1,0 +1,54 @@
+/* Imports */
+@import "../vendors/bootstrap-3.3.4/less/bootstrap.less";
+
+/* Overrides */
+@icon-font-path: "../vendors/bootstrap-3.3.4/fonts/";
+
+/* Styles */
+.content {
+  .container;
+
+  .rouble {
+    .glyphicon;
+    .glyphicon-rub;
+  }
+}
+
+.bids {
+  .table;
+
+  th {
+    .text-right;
+  }
+
+  [data-category = "sales"] {
+    .bg-danger;
+  }
+
+  [data-category = "purchases"] {
+    .bg-success;
+  }
+
+  [data-field $= "volume"],
+  [data-field = "price"] {
+    .text-right;
+  }
+}
+
+.add-purchase,
+.add-sale {
+  .btn;
+
+  .icon {
+    .glyphicon;
+    .glyphicon-plus;
+  }
+}
+
+.add-purchase {
+  .btn-danger;
+}
+
+.add-sale {
+  .btn-success;
+}
